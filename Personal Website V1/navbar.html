@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<TITLE>Navigation Frame</TITLE>
+		<link rel="stylesheet" href="main.css" type="text/css">
+		
+		<style>
+			body, ul, #logo:hover {
+				background-color: #143D66;
+			}
+
+			ul li{
+				display: inline-block;
+				position: relative;
+				text-align: left;
+			}
+			ul li a{
+				display: block;
+				padding: 8px 25px;
+				text-decoration: none;
+			}
+			ul li ul.dropdown{
+				min-width: 175px; /* Set width of the dropdown */
+				background-color: #213141; /* darkish color */
+				display: none;
+				position: absolute;
+				z-index: 999;
+				left: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+			ul li:hover ul.dropdown{
+				display: block;	/* Display the dropdown */
+			}
+			ul li ul.dropdown li{
+				display: block;
+			}
+		</style>
+</head>
+
+<body> <!-- use #1E5959 to restore the old bgcolor-->
+
+	<div id="logo">
+		<a id="logo" href="homepage.html" title="Home Page" target="contents"><img id="logo" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/nav_logo.png"/></a>
+	</div>
+
+	<div class="nav">
+		<ul>
+			<li><a href="homepage.html" target="contents">Main</a></li>
+			<li><a href="aboutme.html" target="contents">About Me</a></li>
+			<li><a href="hobbies.html" target="contents">Hobbies & Interests</a></li>
+			<li><a href="#">Works <span style="font-size: 16px;">&#9662;</span></a>
+				<ul class="dropdown">
+					<li><a href="poems.html" target="contents">Poems</a></li>
+					<li><a href="journalentries.html" target="contents">Journal Entries</a></li>
+					<li><a href="walkthroughs.html" target="contents">Walkthroughs</a></li>
+				</ul>
+			</li>
+			<li><a href="story_1.html" target="contents">Revenge is a dish best served cold</a></li>
+			<li><a href="shop.html" target="contents">Shop</a></li>
+			<li><a href="gallery.html" target="contents">Gallery</a></li>
+		</ul>
+	</div>
+
+<!-- old code. used for maintenance purposes. These uses images in place of links.
+	<div class="nav">
+		<p class="nav">
+		<a href="main.html" target="contents"><img src="nav_home.png" class="nav" /></a>
+		<a href="aboutme.html" target="contents"><img src="nav_about.png" class="nav" /></a>
+		<a href="contactinfo.html" target="contents"><img src="nav_contact.png" class="nav" /></a>
+		<a href="poems.html" target="contents"><img src="nav_poem.png" class="nav" /></a>
+		<a href="journalentries.html" target="contents"><img src="nav_journal.png" class="nav" /></a>
+		<a href="story_1.html" target="contents">Revenge is a dish best served cold</a> |
+		SEQUEL |</p>
+	</div>
+-->
+
+</body>
+</html>
