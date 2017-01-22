@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Archive</title>
+	<link rel="stylesheet" href="main.css" type="text/css">
+	<link rel="shortcut icon" href="http://i57.tinypic.com/2hwg2gg.png" />
+	<style>
+		.item {
+			width: 250px;
+			height: 250px;
+		}
+		
+		td {
+			width: 35%;
+		}
+		
+		tr.price td:nth-child(even)::before {
+			content: "\0020B1    "; /* inserts a peso sign*/
+			font-weight: bold;
+			font-size: 14px;
+		}
+	</style>
+</head>
+
+<body>
+	<a href="home.html" title="Go to home"><img src="logo.png" /></a>
+	<img src="banner.png" />
+	<!-- NAVIGATION BAR / HEADERS -->
+		<div id="nav">
+			<ul id="menu">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li>Works <span style="line-height: 12px;">&#9662;</span>
+					<ul class="dropdown">
+						<li><a href="journal.html">Journal Entries</a></li>
+						<li><a href="poems.html">Poems</a></li>
+						<li><a href="walkthroughs.html">Walkthroughs</a></li>
+					</ul>
+				</li>
+				<li><a href="story_1.html">Revenge is a dish best served cold</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</div>
+	<!-- end NAVIGATION BAR / HEADERS -->
+	<!-- MAIN CONTENT / BODY -->
+		<div id="main">
+			<!-- ARCHIVE IDEAS 
+				A) Deleted posts/pages
+				B) Movies watched in SM
+			-->
+			<!--Table of Contents -->
+			<legend>
+				<fieldset>
+					<h2>Table of Contents</h2>
+					<ul>
+						<li><a href="#shop">Shop</a></li>
+					</ul>
+				</fieldset>
+			</legend>
+			<h1><a id="shop">Shop</a></h1>
+				<p>This section will list the items that I have already sold. The Samuel & Kevin Polo Shirt is excluded in the calculation because this is Noel's item (I had given the money to him).</p>
+				<p id="displayTotal"></p> <!-- display the total here. See the script for details. -->
+					<table border="1" width="80%">
+					<!-- FIRST SET OF ITEMS -->
+						<thead>
+							<th colspan="2">Ecko Pants</th>
+							<th colspan="2">Quiksilver Pants</th>
+							<th colspan="2">Mossimo Gray Shirt</th>
+							<th colspan="2">Dolce and Gabanna Black Shirt</th>
+						</thead>
+						<tr>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/ecko1.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/quiksilver1.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/mossimo1.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/dolce-and-gabanna1.jpg" /></td>
+						</tr>
+						<tr class="price">
+							<td>Price</td>
+							<td>250</td>
+							<td>Price</td>
+							<td>250</td>
+							<td>Price</td>
+							<td>250</td>
+							<td>Price</td>
+							<td>250</td>
+						</tr>
+						<tr>
+							<td>Condition</td>
+							<td>NEW</td>
+							<td>Condition</td>
+							<td>NEW</td>
+							<td>Condition</td>
+							<td>NEW</td>
+							<td>Condition</td>
+							<td>NEW</td>
+						</tr>
+						<tr>
+							<td>Size</td>
+							<td>36</td>
+							<td>Size</td>
+							<td>36</td>
+							<td>Size</td>
+							<td>L</td>
+							<td>Size</td>
+							<td>XL</td>
+						</tr>
+						<tr>
+							<td>Sold on</td>
+							<td>November 6, 2014</td>
+							<td>Sold on</td>
+							<td>December 2, 2014</td>
+							<td>Sold on</td>
+							<td>February 19, 2015</td>
+							<td>Sold on</td>
+							<td>February 19, 2015</td>
+						</tr>
+					<!-- SECOND SET OF ITEMS -->
+						<tr>
+							<th colspan="2">Tender Juicy Freebies</th>
+							<th colspan="2">Ecko Light Blue Polo</th>
+							<th colspan="2">Ecko Red Shirt</th>
+							<th colspan="2">Phat Farm Pants</th>
+						</tr>
+						<tr>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/tender-juicy1.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/ecko2.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/ecko3.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/phat-farm1.jpg" /></td>
+						</tr>
+						<tr class="price">
+							<td>Price</td>
+							<td>70</td>
+							<td>Price</td>
+							<td>200</td>
+							<td>Price</td>
+							<td>200</td>
+							<td>Price</td>
+							<td>150</td>
+						</tr>
+						<tr>
+							<td>Condition</td>
+							<td>NEW</td>
+							<td>Condition</td>
+							<td>used</td>
+							<td>Condition</td>
+							<td>used</td>
+							<td>Condition</td>
+							<td>used</td>
+						</tr>
+						<tr>
+							<td>Size</td>
+							<td>Not applicable</td>
+							<td>Size</td>
+							<td>XL</td>
+							<td>Size</td>
+							<td>XL</td>
+							<td>Size</td>
+							<td>34</td>
+						</tr>
+						<tr>
+							<td>Sold on</td>
+							<td>February 19, 2015</td>
+							<td>Sold on</td>
+							<td>February 20, 2015</td>
+							<td>Sold on</td>
+							<td>February 27, 2015</td>
+							<td>Sold on</td>
+							<td>March 3, 2015</td>
+						</tr>
+					<!-- THIRD SET OF ITEMS -->
+						<tr>
+							<th colspan="2">Phat Farm Black Polo</th>
+							<th colspan="2">Panasonic Earphones</th>
+							<th colspan="2">Dark Blue Ecko Hoodies</th>
+							<th colspan="2">Tribal Camo Shirt</th>
+						</tr>
+						<tr>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/phat-farm2.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/panasonic1.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/ecko4.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/tribal1.jpg" /></td>
+						</tr>
+						<tr class="price">
+							<td>Price</td>
+							<td>200</td>
+							<td>Price</td>
+							<td>300</td>
+							<td>Price</td>
+							<td>400</td>
+							<td>Price</td>
+							<td>250</td>
+						</tr>
+						<tr>
+							<td>Condition</td>
+							<td>used</td>
+							<td>Condition</td>
+							<td>used</td>
+							<td>Condition</td>
+							<td>used</td>
+							<td>Condition</td>
+							<td>used</td>
+						</tr>
+						<tr>
+							<td>Size</td>
+							<td>XXL</td>
+							<td>Size</td>
+							<td>Not applicable</td>
+							<td>Size</td>
+							<td>XL</td>
+							<td>Size</td>
+							<td>L</td>
+						</tr>
+						<tr>
+							<td>Sold on</td>
+							<td>June 25, 2015</td>
+							<td>Sold on</td>
+							<td>July 1, 2015</td>
+							<td>Sold on</td>
+							<td>July 23, 2015</td>
+							<td>Sold on</td>
+							<td>July 23, 2015</td>
+						</tr>
+					<!-- FOURTH SET OF ITEMS -->
+						<tr>
+							<th colspan="2">RRJ Shirt</th>
+							<th colspan="2">Pelle Pelle Shirt</th>
+							<th colspan="2">Samuel & Kevin Polo Shirt (Noel's item)</th>
+							<th colspan="2">Uniqlo Polo Shirt</th>
+						</tr>
+						<tr>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/rrj1.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/pelle-pelle1.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/samuel-and-kevin1.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/uniqlo1.jpg" /></td>
+						</tr>
+						<tr class="price">
+							<td>Price</td>
+							<td>150</td>
+							<td>Price</td>
+							<td>200</td>
+							<td>Price</td>
+							<td id="noel">200</td> <!-- The total price calculation shouldn't include this because this is Noel's item and the money was given to him -->
+							<td>Price</td>
+							<td>200</td>
+						</tr>
+						<tr>
+							<td>Condition</td>
+							<td>used</td>
+							<td>Condition</td>
+							<td>used</td>
+							<td>Condition</td>
+							<td>NEW</td>
+							<td>Condition</td>
+							<td>NEW</td>
+						</tr>
+						<tr>
+							<td>Size</td>
+							<td>XL</td>
+							<td>Size</td>
+							<td>XL</td>
+							<td>Size</td>
+							<td>L</td>
+							<td>Size</td>
+							<td>L</td>
+						</tr>
+						<tr>
+							<td>Sold on</td>
+							<td>July 23, 2015</td>
+							<td>Sold on</td>
+							<td>July 23, 2015</td>
+							<td>Sold on</td>
+							<td>September 18, 2015</td>
+							<td>Sold on</td>
+							<td>September 25, 2015</td>
+						</tr>
+					<!-- FIFTH SET OF ITEMS -->
+						<tr>
+							<th colspan="2">FUBU Sweatshirt</th>
+							<th colspan="2">Giordano Polo</th>
+							<th colspan="2">Dragonplus PSP Analog Stick Kit</th>
+							<th colspan="2">College Algebra 4th Edition By William Hart</th>
+						</tr>
+						<tr>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/fubu1.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/giordano1.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/psp1.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/book1.jpg" /></td>
+						</tr>
+						<tr class="price">
+							<td>Price</td>
+							<td>200</td>
+							<td>Price</td>
+							<td>100</td>
+							<td>Price</td>
+							<td>300</td>
+							<td>Price</td>
+							<td>250</td>
+						</tr>
+						<tr>
+							<td>Condition</td>
+							<td>NEW</td>
+							<td>Condition</td>
+							<td>used</td>
+							<td>Condition</td>
+							<td>NEW</td>
+							<td>Condition</td>
+							<td>used</td>
+						</tr>
+						<tr>
+							<td>Size</td>
+							<td>XL</td>
+							<td>Size</td>
+							<td>M</td>
+							<td>Size</td>
+							<td>Not applicable</td>
+							<td>Size</td>
+							<td>Not applicable</td>
+						</tr>
+						<tr>
+							<td>Sold on</td>
+							<td>September 25, 2015</td>
+							<td>Sold on</td>
+							<td>September 25, 2015</td>
+							<td>Sold on</td>
+							<td>December 17, 2015</td>
+							<td>Sold on</td>
+							<td>January 24, 2016</td>
+						</tr>
+						<!-- SIXTH SET OF ITEMS -->
+						<tr>
+							<th colspan="2">Lee Sweatshirt</th>
+							<th colspan="2">Uniqlo Shirt</th>
+							<th colspan="2">Phat Farm Shirt</th>
+							<th colspan="2">FUBU Jacket</th>
+						</tr>
+						<tr>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/lee1.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/uniqlo2.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/phat-farm3.jpg" /></td>
+							<td colspan="2" align="center"><img class="item" src="http://i709.photobucket.com/albums/ww94/_Storm_iz_here/Personal%20website/SOLD%20ITEMS/fubu2.jpg" /></td>
+						</tr>
+						<tr class="price">
+							<td>Price</td>
+							<td>250</td>
+							<td>Price</td>
+							<td>250</td>
+							<td>Price</td>
+							<td>200</td>
+							<td>Price</td>
+							<td>250</td>
+						</tr>
+						<tr>
+							<td>Condition</td>
+							<td>used</td>
+							<td>Condition</td>
+							<td>used</td>
+							<td>Condition</td>
+							<td>used</td>
+							<td>Condition</td>
+							<td>used</td>
+						</tr>
+						<tr>
+							<td>Size</td>
+							<td>L</td>
+							<td>Size</td>
+							<td>XL</td>
+							<td>Size</td>
+							<td>XL</td>
+							<td>Size</td>
+							<td>M</td>
+						</tr>
+						<tr>
+							<td>Sold on</td>
+							<td>February 26, 2016</td>
+							<td>Sold on</td>
+							<td>February 26, 2016</td>
+							<td>Sold on</td>
+							<td>February 26, 2016</td>
+							<td>Sold on</td>
+							<td>March 21, 2016</td>
+						</tr>
+						<!-- SEVENTH SET OF ITEMS -->
+						<tr>
+							<th colspan="2"> </th>
+							<th colspan="2"> </th>
+							<th colspan="2"> </th>
+							<th colspan="2"> </th>
+						</tr>
+						<tr>
+							<td colspan="2" align="center"><img class="item" src=" " /></td>
+							<td colspan="2" align="center"><img class="item" src=" " /></td>
+							<td colspan="2" align="center"><img class="item" src=" " /></td>
+							<td colspan="2" align="center"><img class="item" src=" " /></td>
+						</tr>
+						<tr class="price">
+							<td>Price</td>
+							<td> </td>
+							<td>Price</td>
+							<td> </td>
+							<td>Price</td>
+							<td> </td>
+							<td>Price</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td>Condition</td>
+							<td> </td>
+							<td>Condition</td>
+							<td> </td>
+							<td>Condition</td>
+							<td> </td>
+							<td>Condition</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td>Size</td>
+							<td> </td>
+							<td>Size</td>
+							<td> </td>
+							<td>Size</td>
+							<td> </td>
+							<td>Size</td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td>Sold on</td>
+							<td> </td>
+							<td>Sold on</td>
+							<td> </td>
+							<td>Sold on</td>
+							<td> </td>
+							<td>Sold on</td>
+							<td> </td>
+						</tr>
+				</table>
+		</div>
+	<!-- end MAIN CONTENT / BODY -->
+	<!-- FOOTERS -->
+		<div id="footer">
+			<ul id="menu">
+				<li><a href="archive.html">Archive</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+				<li><a href="links.html">Links</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="devnews.html">Site Updates</a></li>
+			</ul>
+			<p>Reach me! <span><a href="http://www.instagram.com"><img src="http://i58.tinypic.com/20z7aq0.png" width="16" height="16" /></a> | <a href="http://www.facebook.com/kevin.tibayan?fref=ts"><img src="http://i58.tinypic.com/n507lu.png" width="16" height="16" /></a> | <a href="http://www.twitter.com/cross_effect"><img src="http://i60.tinypic.com/2duf70h.png" width="16" height="16" /></a></span></p>
+			<p>Copyright &#169; Kevin 2015</p>
+			<p>All rights reserved.</p>
+			<p>Per DTI-NCR Permit No. 07292015, Series of 2015.</p>
+		</div>
+	<!-- end FOOTERS -->
+	
+	<!-- SCRIPT LISTS -->
+		<!-- script for summing up the total prices (excluding Noel's item though). Completed on 9/22/15 -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+			var arr = [];
+			var totalPrice = 0;
+
+			$("tr.price td:nth-child(even):not(#noel)").each(function(){ <!-- exclude the id 'noel' in being added to the array because they are not going to be added in the calculation -->
+				arr.push($(this).text()); <!-- adds each element with a td class 'price' to the array 'arr' -->
+				
+				var price = $(this).text()
+				totalPrice += Number(price); <!-- parses the HTML element (because it's a string, by default) into an Integer then do the adding -->
+				document.getElementById("displayTotal").innerHTML = "Total amount is currently at <b>"+totalPrice+ "</b> pesos."; <!-- display the sum to a p id of 'displayTotal' -->
+			});
+		</script>
+	<!-- end SCRIPT LISTS -->
+</body>
+</html>

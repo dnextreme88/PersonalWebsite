@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="main.css" type="text/css">
+	<link rel="shortcut icon" href="http://i57.tinypic.com/2hwg2gg.png" />
+	<style>
+		/* thumbnail section */
+		#thumbnailDiv {
+			background-color: #5C5C8A;
+		}
+		ul#thumbnails {
+			  list-style-type: none; 
+		}
+		ul#thumbnails li {
+			  display: inline; 
+		}
+		ul#thumbnails li img{
+			  width: 120px;
+			  height: 120px;
+			  margin-left: -16px; /* overlaps them */
+			  margin-bottom: 64px; /* adds a small amount of space to easily separate pics to another section */
+		}
+		ul#thumbnails li:nth-child(odd) img{ /* selects every odd number */
+			  border: 3px solid purple;
+			  transform: rotate(-15deg);
+			  transition: all 0.5s ease-out;
+		}
+		ul#thumbnails li:nth-child(even) img{ /* selects every even number */
+			  border: 3px solid violet;
+			  transform: rotate(15deg);
+			  transition: all 0.5s ease-in;
+		}
+			/* image hovers */
+			ul#thumbnails li:nth-child(odd) img:hover{
+				  width: 320px;
+				  height: 320px;
+				  border: 3px solid blue;
+				  transform: rotate(5deg);
+			}
+			ul#thumbnails li:nth-child(even) img:hover{
+				  width: 320px;
+				  height: 320px;
+				  border: 3px solid blue;
+				  transform: rotate(-5deg);
+			}
+			/* end image hovers */
+		/* end thumbnail section */
+	</style>
+</head>
+
+<body>
+	<a href="home.html" title="Go to home"><img src="logo.png" /></a>
+	<img src="banner.png" />
+	<!-- NAVIGATION BAR / HEADERS -->
+		<div id="nav">
+			<ul id="menu">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li>Works <span style="line-height: 12px;">&#9662;</span>
+					<ul class="dropdown">
+						<li><a href="journal.html">Journal Entries</a></li>
+						<li><a href="poems.html">Poems</a></li>
+						<li><a href="walkthroughs.html">Walkthroughs</a></li>
+					</ul>
+				</li>
+				<li><a href="story_1.html">Revenge is a dish best served cold</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li id="itemSelected"><a href="gallery.html" id="itemSelected">Gallery</a></li>
+		  </ul>
+		</div>
+	<!-- end NAVIGATION BAR / HEADERS -->
+	<!-- MAIN CONTENT / BODY -->
+		<div id="main">
+			<div id="thumbnailDiv">
+			<p>A collection of pictures. Browse through! Hover through each of the images to see an enlarged view.</p>
+				<ul>
+					<li>Myself
+						<ul id="thumbnails">
+						  <li><img src="http://tinyurl.com/nvlajd9" /></li>
+						  <li><img src="http://tinyurl.com/nwlypf9" /></li>
+						  <li><img src="http://tinyurl.com/q5mkswp" /></li>
+						  <li><img src="http://tinyurl.com/qewybfr" /></li>
+						  <li><img src="http://tinyurl.com/nmekfo8" /></li>
+						  <li><img src="http://tinyurl.com/pb93kyp" /></li>
+						</ul>
+					</li>
+					<li>Baby Pics
+						<ul id="thumbnails">
+						  <li><img src="http://tinyurl.com/owqmbhq" /></li>
+						  <li><img src="http://tinyurl.com/pu4tweo" /></li>
+						  <li><img src="http://tinyurl.com/ofuwydb" /></li>
+						  <li><img src="http://tinyurl.com/ph6ruz3" /></li>
+						</ul>
+					</li>
+					<li>With famous personalities
+						<ul id="thumbnails">
+						  <li><img src="http://tinyurl.com/oj2hhmp" /></li>
+						  <li><img src="http://tinyurl.com/pohb728" /></li>
+						</ul>
+					</li>
+			</div>
+		</div>
+	<!-- end MAIN CONTENT / BODY -->
+	<!-- FOOTERS -->
+		<div id="footer">
+			<ul id="menu">
+				<li><a href="archive.html">Archive</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+				<li><a href="links.html">Links</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="devnews.html">Site Updates</a></li>
+			</ul>
+			<p>Reach me! <span><a href="http://www.instagram.com"><img src="http://i58.tinypic.com/20z7aq0.png" width="16" height="16" /></a> | <a href="http://www.facebook.com/kevin.tibayan?fref=ts"><img src="http://i58.tinypic.com/n507lu.png" width="16" height="16" /></a> | <a href="http://www.twitter.com/cross_effect"><img src="http://i60.tinypic.com/2duf70h.png" width="16" height="16" /></a></span></p>
+			<p>Copyright &#169; Kevin 2015</p>
+			<p>All rights reserved.</p>
+			<p>Per DTI-NCR Permit No. 07292015, Series of 2015.</p>
+		</div>
+	<!-- end FOOTERS -->
+</body>
+</html>

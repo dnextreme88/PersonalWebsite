@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Revenge Is A Dish Best Served Cold</title>
+	<link rel="stylesheet" href="main.css" type="text/css">
+	<link rel="shortcut icon" href="http://i57.tinypic.com/2hwg2gg.png" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
+	<script type="text/javascript">
+		 function show(charac){
+			  $('td p').hide()   
+			  $('td p:has(a.'+charac+')').show()
+		 }
+	</script>
+	<script>
+		function showhide(id){
+			if (document.getElementById){
+				obj = document.getElementById(id);
+				if (obj.style.display == "none"){
+					obj.style.display = "";
+				} else {
+					obj.style.display = "none";
+				}
+			}
+		}
+	</script>
+	<style>
+		table.char {
+			table-layout: fixed;
+			width: 100%;
+			padding: 0px;
+			border-spacing: 0;
+		}
+		.no-display {
+			display: none;
+			text-align: left;
+		}
+	</style>
+</head>
+
+<body>
+	<a href="home.html" title="Go to home"><img src="logo.png" /></a>
+	<img src="banner.png" />
+	<!-- NAVIGATION BAR / HEADERS -->
+		<div id="nav">
+			<ul id="menu">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li>Works <span style="line-height: 12px;">&#9662;</span>
+					<ul class="dropdown">
+						<li><a href="journal.html">Journal Entries</a></li>
+						<li><a href="poems.html">Poems</a></li>
+						<li><a href="walkthroughs.html">Walkthroughs</a></li>
+					</ul>
+				</li>
+				<li id="itemSelected"><a href="story_1.html" id="itemSelected">Revenge is a dish best served cold</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+		  </ul>
+		</div>
+	<!-- end NAVIGATION BAR / HEADERS -->
+	<!-- MAIN CONTENT / BODY -->
+		<div id="main">
+			<h1 style="text-align: center;">Revenge is a Dish Best Served Cold</h1>
+			<hr width="80%">
+			<!-- Introduction section-->
+				<h2>Introduction</h2>
+					<p>I want to be an aspiring writer someday. This is my 1st fictional story. The personal project was initially started on September 23, 2012 and was finished on March 26, 2014. The story is inspired by Final Fantasy VII: Crisis Core, who revolves around the story of the main protagonist to do what is right whilst upholding his honor. Head forward to read my content. Hope you drop a feedback!</p>
+			<!-- Synopsis section -->
+				<h2>Synopsis</h2>
+					<p>Raz is fresh of the boat as a new addition to the secret organization called SOLDIER. A quiet and persevering man, the story follows his journey in his conquest to rid of the renegade group headed by former SOLDIER operative, Jeffrey. Jeffrey had gathered a large upscale forces that have terrorized the lands of Thalts.</p>
+
+					<p>SOLDIER (Special Operating Law Defensive Investigators Executing Renegades) is a secret task force whose main goal is to eliminate inhumanity in the land. SOLDIER is headed by Biggs, whose skills in the military and fervent training in battlegrounds made him a powerful yet kind-hearted leader. SOLDIER operates privately and does not take orders from the government. They have no working relationship from other private agencies by the government either. Recruitment is voluntary and is usually through invites only. SOLDIER is composed of many groups. These groups are utilized in special missions when trouble is present.</p>
+
+					<p>Unfortunately, SOLDIER were not aware that Jeffrey is behind this. As a secret organization that has no direct relationship with other government agencies, SOLDIER marches forward in dealing with hostile units themselves without the help of military agencies to aid them.</p>
+
+					<p>Through the ups and downs of his quest, Raz will find someone who will understand his woes as they conquer over injustice and bring back the old glory of the land.</p>
+					<p align="center"><a href="story_1\chapter1.html" class="button">Start reading</a></p> <!-- redirects the user at the first chapter -->
+			<!-- Characters' section -->
+			<h2>Characters</h2>
+				<table class="char" border="1">
+					<tr>
+						<td valign="top">
+							<!-- Character names -->
+							<table cellpadding="0" cellspacing="2" width="30%" border="0">
+								<tr>
+									<td><a href="#" onclick='show("raz")'>Raz</a></td>
+								</tr>
+								<tr>
+									<td><a href="#" onclick='show("jeffrey")'>Jeffrey</a></td>
+								</tr>
+								<tr>
+									<td><a href="#" onclick='show("biggs")'>Biggs</a></td>
+								</tr>
+								<tr>
+									<td><a href="#" onclick='show("serez")'>Serez</a></td>
+								</tr>
+								<tr>
+									<td><a href="#" onclick='show("nicole")'>Nicole</a></td>
+								</tr>
+								<tr>
+									<td><a href="#" onclick='show("aaron")'>Aaron</a></td>
+								</tr>
+								<tr>
+									<td><a href="#" onclick='show("drix")'>Drix</a></td>
+								</tr>
+								<tr>
+									<td><a href="#" onclick='show("almon")'>Almon</a></td>
+								</tr>
+								<tr>
+									<td><a href="#" onclick='show("zey")'>Zey</a></td>
+								</tr>
+								<tr>
+									<td><a href="#" onclick='show("billy")'>Billy</a></td>
+								</tr>
+								<tr>
+									<td><a href="#" onclick='show("kim")'>Kim</a></td>
+								</tr>
+								<tr>
+									<td><a href="#" onclick='show("nizz")'>Nizz</a></td>
+								</tr>
+								<tr>
+									<td><a href="#" onclick='show("darl")'>Darl</a></td>
+								</tr>
+							</table>
+						</td>
+					<!-- Characters'	description -->
+						<td valign="top">
+							<p class="no-display"><a class="raz">
+							main protagonist. SOLDIER's Beta Team leader. Raz is a newcomer to the secret group but because of his undeniable skills, he was immediately appointed to be a leader. A patient and calm individual, Raz is serious when it comes to work. He may not always issue orders to his men, but his independence makes him stand out among the rest of his team. [Dies at Chapter XVIII]</a></p>
+							<p class="no-display"><a class="jeffrey">main antagonist. Former SOLDIER's Beta Team leader, replaced by Raz. Leader of the anti-SOLDIER group. [Introduced at Chapter VI]</a></p>
+							<p class="no-display"><a class="biggs">SOLDIER's founder and leader of the secret group.</a></p>
+							<p class="no-display"><a class="serez">SOLDIER's Zeta Team leader. Biggs' right-hand man. Specializing in sniping skills, he can take out numerous targets with quick speed and agility. He also acts as the group's spy leader, doing the commands during infiltration missions and stealth.</a></p>
+							<p class="no-display"><a class="nicole">SOLDIER's secret operative [Introduced at Chapter VIII]</a></p>
+							<p class="no-display"><a class="aaron">SOLDIER's Alpha Team leader. A long-time friend of Biggs, Aaron specializes in weapon mastery. He also utilizes his skills through his fast coordination with bomb defusals. [Dies at Chapter IV]</a></p>
+							<p class="no-display"><a class="drix">SOLDIER's Omega Team leader. Drix has a meanie attitude though he is an all-around guy whom the team can trust on sometimes. Though Drix may be huge when it comes to size, he can support his men with what they are capable of. He supports them through his continual advises on war strategies and survival tips on wars which make him alright for the team. [Dies at Chapter XI - A2/B2]</a></p>
+							<p class="no-display"><a class="almon">one of Jeffrey's leaders [Introduced at Chapter VII - A2, Dies at Chapter XI - A2/B2]</a></p>
+							<p class="no-display"><a class="zey">Biggs' secretary.</a></p>
+							<p class="no-display"><a class="billy">Raz's friend at the apartment. [Chapter VII - B1]</a></p>
+							<p class="no-display"><a class="kim">Raz's friend at the apartment. [Chapter VII - B1]</a></p>
+							<p class="no-display"><a class="nizz">Raz's friend at the apartment. [Chapter VII - B1]</a></p>
+							<p class="no-display"><a class="darl">Aaron's successor for SOLDIER's Alpha Team leadership. [Chapter XVI]</a></p>
+						</td>
+					</tr>
+				</table>
+			<!-- Chapter Summary section -->
+			<h2>Chapter Summary</h2>
+				<p>Check out the summary by <a href="story_1/chapter_summary.html">clicking here</a></p>
+		</div>
+	<!-- end MAIN CONTENT / BODY -->
+	<!-- FOOTERS -->
+		<div id="footer">
+			<ul id="menu">
+				<li><a href="archive.html">Archive</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+				<li><a href="links.html">Links</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="devnews.html">Site Updates</a></li>
+			</ul>
+			<p>Reach me! <span><a href="http://www.instagram.com"><img src="http://i58.tinypic.com/20z7aq0.png" width="16" height="16" /></a> | <a href="http://www.facebook.com/kevin.tibayan?fref=ts"><img src="http://i58.tinypic.com/n507lu.png" width="16" height="16" /></a> | <a href="http://www.twitter.com/cross_effect"><img src="http://i60.tinypic.com/2duf70h.png" width="16" height="16" /></a></span></p>
+			<p>Copyright &#169; Kevin 2015</p>
+			<p>All rights reserved.</p>
+			<p>Per DTI-NCR Permit No. 07292015, Series of 2015.</p>
+		</div>
+	<!-- end FOOTERS -->
+</body>
+</html>

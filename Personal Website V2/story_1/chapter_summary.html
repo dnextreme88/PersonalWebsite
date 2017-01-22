@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chapter Summary</title>
+	<link rel="stylesheet" href="story.css" type="text/css">
+	<style>
+		ul {
+			list-style-type: none; 
+		}
+
+		#c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8, #c9, #c10, #c11, #c12, #c13, #c14, #c15, #c16, #c17, #c18 {
+			height: 0px;
+			visibility: hidden;
+			transition: all 1s ease-in;
+			background-color: #7A8ECC;
+		}
+
+		#c1:target, #c2:target, #c3:target, #c4:target, #c5:target, #c6:target, #c7:target, #c8:target, #c9:target, #c10:target, #c11:target, #c12:target, #c13:target, #c14:target, #c15:target, #c16:target, #c17:target, #c18:target {
+			visibility: visible;
+			height: 120px;
+			transition: all 0.6s ease-out 0.2s;
+		}
+	</style>
+</head>
+
+<body>
+	<a href="..\home.html" title="Go to home"><img src="..\logo.png" /></a>
+	<img src="..\banner.png" />
+	<!-- NAVIGATION BAR / HEADERS -->
+		<div id="nav">
+			<ul id="menu">
+				<li><a href="..\home.html">Home</a></li>
+				<li><a href="..\about.html">About Me</a></li>
+				<li>Works <span style="line-height: 12px;">&#9662;</span>
+					<ul class="dropdown">
+						<li><a href="..\journal.html">Journal Entries</a></li>
+						<li><a href="..\poems.html">Poems</a></li>
+						<li><a href="..\walkthroughs.html">Walkthroughs</a></li>
+					</ul>
+				</li>
+				<li id="itemSelected"><a href="..\story_1.html" id="itemSelected">Revenge is a dish best served cold</a></li>
+				<li><a href="..\shop.html">Shop</a></li>
+				<li><a href="..\gallery.html">Gallery</a></li>
+		  </ul>
+		</div>
+	<!-- end NAVIGATION BAR / HEADERS -->
+	<!-- MAIN CONTENT / BODY -->
+		<div id="main">
+			<p>Welcome! If you needed a recap of all the chapters, then you've come to the right place! This page will just show a simple summary of those chapters you have read. Select a chapter to view.</p>
+				<ul>
+					<li><a href="#c1" id="chapter1" onclick="show(c1)">Chapter 1: A New Beginning</a>
+						<div id="c1">
+							<p>Chapter 1's content here</p>
+							<p><a href="#chapter1" onclick="hide(c1)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c2" id="chapter2" onclick="show(c2)">Chapter 2: Village In Terror</a>
+						<div id="c2">
+							<p>Chapter 2's content here</p>
+							<p><a href="#chapter2" onclick="hide(c2)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c3" id="chapter3" onclick="show(c3)">Chapter 3: In The HQ</a>
+						<div id="c3">
+							<p>Chapter 3's content here</p>
+							<p><a href="#chapter3" onclick="hide(c3)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c4" id="chapter4" onclick="show(c4)">Chapter 4: The Mutation</a>
+						<div id="c4">
+							<p>Chapter 4's content here</p>
+							<p><a href="#chapter4" onclick="hide(c4)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c5" id="chapter5" onclick="show(c5)">Chapter 5: The Sad News</a>
+						<div id="c5">
+							<p>Chapter 5's content here</p>
+							<p><a href="#chapter5" onclick="hide(c5)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c6" id="chapter6" onclick="show(c6)">Chapter 6: Encounter With A Madman</a>
+						<div id="c6">
+							<p>Chapter 6's content here</p>
+							<p><a href="#chapter6" onclick="hide(c6)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c7" id="chapter7" onclick="show(c7)">Chapter 7: Two Sides</a>
+						<div id="c7">
+							<p>Chapter 7's content here</p>
+							<p><a href="#chapter7" onclick="hide(c7)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c8" id="chapter8" onclick="show(c8)">Chapter 8: The Secret Operative</a>
+						<div id="c8">
+							<p>Chapter 8's content here</p>
+							<p><a href="#chapter8" onclick="hide(c8)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c9" id="chapter9" onclick="show(c9)">Chapter 9: The Dust That Remains</a>
+						<div id="c9">
+							<p>Chapter 9's content here</p>
+							<p><a href="#chapter9" onclick="hide(c9)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c10" id="chapter10" onclick="show(c10)">Chapter 10: Close To You</a>
+						<div id="c10">
+							<p>Chapter 10's content here</p>
+							<p><a href="#chapter10" onclick="hide(c10)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c11" id="chapter11" onclick="show(c11)">Chapter 11: Price Of Freedom</a>
+						<div id="c11">
+							<p>Chapter 11's content here</p>
+							<p><a href="#chapter11" onclick="hide(c11)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c12" id="chapter12" onclick="show(c12)">Chapter 12: Three-Way Dance</a>
+						<div id="c12">
+							<p>Chapter 12's content here</p>
+							<p><a href="#chapter12" onclick="hide(c12)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c13" id="chapter13" onclick="show(c13)">Chapter 13: A Failed Defense</a>
+						<div id="c13">
+							<p>Chapter 13's content here</p>
+							<p><a href="#chapter13" onclick="hide(c13)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c14" id="chapter14" onclick="show(c14)">Chapter 14: The Master's Plan</a>
+						<div id="c14">
+							<p>Chapter 14's content here</p>
+							<p><a href="#chapter14" onclick="hide(c14)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c15" id="chapter15" onclick="show(c15)">Chapter 15: Fugitive On The Hunt</a>
+						<div id="c15">
+							<p>Chapter 15's content here</p>
+							<p><a href="#chapter15" onclick="hide(c15)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c16" id="chapter16" onclick="show(c16)">Chapter 16: Where It All Began</a>
+						<div id="c16">
+							<p>Chapter 16's content here</p>
+							<p><a href="#chapter16" onclick="hide(c16)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c17" id="chapter17" onclick="show(c17)">Chapter 17: The Fall Of SOLDIER</a>
+						<div id="c17">
+							<p>Chapter 17's content here</p>
+							<p><a href="#chapter17" onclick="hide(c17)">Hide content</a></p>
+						</div>
+					</li>
+					<li><a href="#c18" id="chapter18" onclick="show(c18)">Chapter 18: End Of The Line</a>
+						<div id="c18">
+							<p>Chapter 18's content here</p>
+							<p><a href="#chapter18" onclick="hide(c18)">Hide content</a></p>
+						</div>
+					</li>
+				</ul>
+			<p>You can click any of the buttons below to read the fictional story from the start (try selecting different choices in the branching chapters to have a full understanding of the whole story!) or go back to the story's main page.</p>
+				<!-- sub navigation bar for going back to previous chapter or proceeding to next chapter. -->
+				<div id="chapternav">
+					<ul class="submenu">
+						<li><a href="chapter1.html" class="button">Read from Chapter 1</a></li> <!-- redirects the user at the first chapter -->
+						<li><a href="..\story_1.html" class="button">Back to main page</a></li> <!-- redirects user to the story's main page -->
+					</ul>
+				</div>
+		</div>
+	<!-- end MAIN CONTENT / BODY -->
+	<!-- FOOTERS -->
+		<div id="footer">
+			<ul id="menu">
+				<li><a href="..\archive.html">Archive</a></li>
+				<li><a href="..\contact.html">Contact Me</a></li>
+				<li><a href="..\links.html">Links</a></li>
+				<li><a href="..\sitemap.html">Sitemap</a></li>
+				<li><a href="..\devnews.html">Site Updates</a></li>
+			</ul>
+			<p>Reach me! <span><a href="..\http://www.instagram.com"><img src="http://i58.tinypic.com/20z7aq0.png" width="16" height="16" /></a> | <a href="..\http://www.facebook.com/kevin.tibayan?fref=ts"><img src="http://i58.tinypic.com/n507lu.png" width="16" height="16" /></a> | <a href="..\http://www.twitter.com/cross_effect"><img src="http://i60.tinypic.com/2duf70h.png" width="16" height="16" /></a></span></p>
+			<p>Copyright &#169; Kevin 2015</p>
+			<p>All rights reserved.</p>
+			<p>Per DTI-NCR Permit No. 07292015, Series of 2015.</p>
+		</div>
+	<!-- end FOOTERS -->
+	
+	<!-- scripts section -->
+	<script>
+		var id;
+		var contents = document.getElementById(id);
+		function show(contents) {
+			if (x.style.visibility = "hidden") {
+				x.style.visibility = "visible";
+			}
+		}
+		function hide(contents) {
+			if (x.style.visibility = "visible") {
+				x.style.height = 0;
+				x.style.visibility = "hidden";
+			}
+		}
+</script>
+</body>
+</html>

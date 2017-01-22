@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="main.css" type="text/css">
+	<link rel="shortcut icon" href="http://i57.tinypic.com/2hwg2gg.png" />
+	<style>
+	  	/* divs */
+    div#chapterMap {
+      background-color: #444;
+      overflow: auto;
+      width: 50%;
+      margin: auto;
+    }
+    /* end divs */
+    /* chapter nav */
+    ul {
+      margin: 0; 
+      padding: 0;
+    }
+    li {
+      display: inline;
+      float: left;
+    }
+      /* sub chapter lists */
+      li#chapter7 {
+        min-width: 66%;
+      }
+        li#chapter7 div {
+          float: right; 
+          width: 50%; 
+          background: pink;
+        }
+          li#chapter7 div ul {
+              margin: 0 auto;
+              width: fit-content;
+          }
+            li#chapter7 div ul li {
+              padding: 2px;
+            }
+      /* end sub chapter lists */
+      li#chapter8 {
+        min-width: 33%;
+      }
+    /* end chapter nav */
+  	/* links */
+			a:link { /* unvisited link */
+				text-decoration: none; /* removes underline from all links */
+				color: #707A9A; /* light gray */
+			}
+			a:visited { /* visited link */
+				color: #4775D1; /* darker blue than the #339ff */
+			}
+			a:active { /* selected link / a link the moment it is clicked */
+				color: #3399ff; /* aqua blue */
+			}
+		/* end links */
+		/* buttons */
+			a:link.button, a:visited.button { /* add a a:visited pseudo class because it's overriding the main a:visited property */
+				border: 2px solid gray;
+				text-align: center;
+				text-transform: uppercase;
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				padding: 0.5em;
+				background-color: #213141;
+				color: white;
+				transition: all 0.3s linear;
+			}
+			a:link.button:hover, a:visited.button:hover {
+				background-color: #7A8ECC;
+			}
+		/* end buttons */
+	</style>
+</head>
+
+<body>
+
+<div id="chapterMap">
+  <ul>
+    <li id="chapter7"><a href="chapter7.html" class="button">List #1</a>
+      <div>
+        <ul id="heroLine">
+          <li><a href="chapter7.html" class="button">Part 1</a></li>
+          <li><a href="chapter7.html" class="button">Part 2</a></li>
+        </ul>
+        <p style="text-align: center;">Hero</p>
+        <p style="text-align: center;">Vengeance</p>
+        <ul id="vengeanceLine">
+          <li><a href="chapter7.html" class="button">Part 1</a></li>
+          <li><a href="chapter7.html" class="button">Part 2</a></li>
+          <li><a href="chapter7.html" class="button">Part 3</a></li>
+        </ul>
+      </div>
+    </li>
+    <li id="chapter8"><a href="chapter8.html" class="button">List #2</a>
+  </ul>
+</div>
+
+</body>
+</html>

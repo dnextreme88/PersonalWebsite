@@ -1,0 +1,132 @@
+	/* style contents:
+		A) Links
+		B) Buttons
+		C) Headings
+		D) Menus
+			D1) Dropdown menus
+		E) Divisions (div tags)
+		*/
+		
+		body {
+			font-family: Helvetica, Arial, sans-serif;
+			margin: 3%;
+			font-size: 13px;
+			background-color: gray;
+		}
+		p#content { /* chapter's content */
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 14px;
+			text-indent: 1.5cm;
+		}
+		/* links */
+			a:link { /* unvisited link */
+				text-decoration: none; /* removes underline from all links */
+				color: #707A9A; /* light gray */
+			}
+			a:visited { /* visited link */
+				color: #4775D1; /* darker blue than the #339ff */
+			}
+			a:active { /* selected link / a link the moment it is clicked */
+				color: #3399ff; /* aqua blue */
+			}
+		/* end links */
+		/* buttons */
+			a:link.button, a:visited.button { /* add a a:visited pseudo class because it's overriding the main a:visited property */
+				border: 2px solid gray;
+				text-align: center;
+				text-transform: uppercase;
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+				padding: 0.5em;
+				background-color: #213141;
+				color: white;
+				transition: all 0.3s linear;
+			}
+			a:link.button:hover, a:visited.button:hover {
+				background-color: #7A8ECC;
+			}
+		/* end buttons */
+		/* headings */
+			h2 { /* chapter title heading */
+				color: #2E8AE6;
+				font-size: 18px;
+				text-align: center;
+			}
+			h6 {
+				font-size: 10px;
+				text-indent: 1cm;
+			}
+		/* end headings */
+		/* menus */
+			ul#menu {
+				list-style-type: none;
+				font-size: 0; /* removes whitespace between list items */
+			}
+			ul#menu li {
+				display: inline;
+				position: relative; /* aligns list items */
+				font-size: 18px; /* set a font size to curb font-size 0 */
+				padding: 8px 8px 1px 8px; /* set padding-bottom to 1px to avoid extra space on the bottom */
+				cursor: pointer;
+				transition: all 0.3s ease-out; /* based on hover element */
+			}
+			#itemSelected { /* applies to navbar when the link is selected it will highlight it, not in the footer */
+				background-color: #7A8ECC;
+				color: #7575A3;
+			}
+			ul#menu li:hover { 
+				background-color: #7A8ECC; /* when hovered, changes to this color.*/
+			}
+			ul.submenu {
+				list-style-type: none;
+			}
+			ul.submenu li {
+				display: inline;
+			}
+			/* dropdown CSS */
+			ul#menu li ul.dropdown {
+				min-width: 160px;
+				display: none;
+				z-index: 999; /* always overrides first whatever content it may be below (in case of overlapping, the dropdown will be shown over the element) */
+				left: 0;
+				padding: 0;
+				margin: 0;
+				background-color: #213141;
+				position: absolute;
+			}
+			ul#menu li:hover ul.dropdown {
+				display: block;
+			}
+			ul#menu li ul.dropdown li {
+				display: block;
+				padding: 8px;
+				text-align: right; /* aligns each dropdown list items to the right. */
+			}
+			/* end dropdown CSS */
+		/* end menus */
+		/* divisions */
+			div#nav {
+				background-color: #213141; /* the list DOESN'T HAVE THE COLOR but rather the navigational bar's background. */
+				border-top-left-radius: 2em;
+				border-top-right-radius: 2em;
+				text-align: center;
+				padding-top: 8px;
+			}
+			div#subnav { /* the submenu on each of the chapters uses this. Used in conjuction with .submenu */
+				text-align: right;
+			}
+			div#main {
+				background-color: #525254; /* purple-ish: #666699 */
+				margin-bottom: 8px;
+				margin-top: 8px;
+			}
+			div#footer {
+				background-color: #444;
+				width: 70%;
+				height: 250px;
+				margin: auto;
+				border-top-right-radius: 2em;
+				border-top-left-radius: 2em;
+				text-align: center;
+				padding-top: 8px;
+			}
+		/* end divisions */
