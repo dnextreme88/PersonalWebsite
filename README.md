@@ -1,2 +1,3 @@
 # PersonalWebsite
-HTML, CSS. JS
+
+Computer Languages used: HTML, CSS. JS, PHP
