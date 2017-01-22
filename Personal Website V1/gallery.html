@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+		<link rel="stylesheet" href="main.css" type="text/css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0b1.js"></script>
+		<script type="text/javascript">
+			 function showImage(num){
+			  $('figure').hide()   
+			  $('figure:has(a.'+num+')').show()
+			 }
+			 
+			 function categoryUncategorized(cat1){
+			  $('#babyCat').hide()    /* hide the baby photos when the "Baby pics" folder is clicked. */
+			  $('#myselfCat').hide()    /* hide the myself photos when the "Baby pics" folder is clicked. */
+			  $('div:has(a.'+cat1+')').show()
+			 }
+			 
+			 function categoryBaby(cat2){
+			  $('#uncategorizedCat').hide()    /* hide the uncategorized photos when the "Baby pics" folder is clicked. */
+			  $('#myselfCat').hide()    /* hide the myself photos when the "Baby pics" folder is clicked. */
+			  $('div:has(a.'+cat2+')').show()
+			 }
+			 
+			 function categoryMyself(cat3){
+			  $('#uncategorizedCat').hide()    /* hide the uncategorized photos when the "Myself pics" folder is clicked. */
+			  $('#babyCat').hide()    /* hide the baby photos when the "Myself pics" folder is clicked. */
+			  $('div:has(a.'+cat3+')').show()
+			 }
+		</script>
+		<style>
+		.small {
+			width: 100px;
+			height: 100px;
+		} /* for images haha */
+		
+		.large {
+			width: 250px;
+			height: 250px;
+		} /* use this class selector when the image is clicked to enlarge it */
+		
+		#enlargedview{
+			border: 2px solid black;
+			padding: 5px;
+			width: 270px;
+			height: 270px;
+			margin: auto;
+		} /* use this ID selector to enlarge the view when the image is clicked */
+		
+		.no-display{
+			display: none;
+			margin: auto; /* centers image */
+			text-align: center; /* centers the caption */
+		} /* use this class selector to initially hide the element */
+		
+		body {
+			margin-left: 3%; /* give it a margin so it looks neater */
+		}
+		</style>
+</head>
+
+<body>
+
+	<script>
+		function showhide(id){
+			if (document.getElementById){
+				obj = document.getElementById(id);
+				if (obj.style.display == "none"){
+					obj.style.display = "";
+				} else {
+					obj.style.display = "none";
+				}
+			}
+		}
+	</script>
+
+	<!-- Header -->
+
+	<h1 id="header">GALLERY</h1>
+	<hr color="blue">
+
+	<p align="center">Welcome to my gallery! Click on any of the images below to enlarge it. Navigate through the different images via the Folder Navigation.</p>
+
+	<div id="enlargedview">
+		<figure class="no-display"><a class="1"><img class="large" src="http://tinyurl.com/owqmbhq" /><figcaption>Solo baby pic</figcaption></a></figure>
+		<figure class="no-display"><a class="2"><img class="large" src="http://tinyurl.com/pu4tweo" /><figcaption>Baby pic with Kuya Brian 1</figcaption></a></figure>
+		<figure class="no-display"><a class="3"><img class="large" src="http://tinyurl.com/ofuwydb" /><figcaption>Baby pic with Kuya Brian 2</figcaption></a></figure>
+		<figure class="no-display"><a class="4"><img class="large" src="http://tinyurl.com/ph6ruz3" /><figcaption>Baby pic with Kuya Brian 3</figcaption></a></figure>
+		<figure class="no-display"><a class="5"><img class="large" src="http://tinyurl.com/nvlajd9" /><figcaption>Ponytail Kevin</figcaption></a></figure>
+		<figure class="no-display"><a class="6"><img class="large" src="http://tinyurl.com/nwlypf9" /><figcaption>Batman Kevin</figcaption></a></figure>
+		<figure class="no-display"><a class="7"><img class="large" src="http://tinyurl.com/q5mkswp" /><figcaption>Bald Kevin</figcaption></a></figure>
+		<figure class="no-display"><a class="8"><img class="large" src="http://tinyurl.com/qewybfr" /><figcaption>Badboy Kevin</figcaption></a></figure>
+		<figure class="no-display"><a class="9"><img class="large" src="http://tinyurl.com/nmekfo8" /><figcaption>Prom King Kevin</figcaption></a></figure>
+		<figure class="no-display"><a class="10"><img class="large" src="http://tinyurl.com/pb93kyp" /><figcaption>Formal Swag Kevin</figcaption></a></figure>
+		<figure class="no-display"><a class="11"><img class="large" src="http://tinyurl.com/oj2hhmp" /><figcaption>With former CFPH GM Rhaine</figcaption></a></figure>
+		<figure class="no-display"><a class="12"><img class="large" src="http://tinyurl.com/pohb728" /><figcaption>With Robin Padilla.</figcaption></a></figure>
+		<figure class="no-display"><a class=" "><img class="large" src=" " /><figcaption>CAPTION HERE</figcaption></a></figure>
+		<figure class="no-display"><a class=" "><img class="large" src=" " /><figcaption>CAPTION HERE</figcaption></a></figure>
+	</div>
+
+	<!-- uncategorized pics -->
+
+	<div id="uncategorizedCat" align="center"> <!-- don't use no-display so the main photos would show up, just center it -->
+		<h3>Uncategorized pics</h3>
+		<a class="uncategorized" href="#" onclick='showImage("11")'><img class="small" src="http://tinyurl.com/oj2hhmp" /></a> <!-- with GM Rhaine -->
+		<a class="uncategorized" href="#" onclick='showImage("12")'><img class="small" src="http://tinyurl.com/pohb728" /></a> <!-- with robin picture -->
+		<a class="uncategorized" href="#" onclick='showImage(" ")'><img class="small" src=" " /></a> <!-- caption -->
+		<a class="uncategorized" href="#" onclick='showImage(" ")'><img class="small" src=" " /></a> <!-- caption -->
+	</div>
+
+	<!-- baby pics -->
+	<div id="babyCat" class="no-display">
+		<h3>Baby pics</h3>
+		<a class="baby" href="#" onclick='showImage("1")'><img class="small" src="http://tinyurl.com/owqmbhq" /></a> <!-- solo baby pic -->
+		<a class="baby" href="#" onclick='showImage("2")'><img class="small" src="http://tinyurl.com/pu4tweo" /></a> <!-- baby pic with kuya brian 1 -->
+		<a class="baby" href="#" onclick='showImage("3")'><img class="small" src="http://tinyurl.com/ofuwydb" /></a> <!-- baby pic with kuya brian 2 -->
+		<a class="baby" href="#" onclick='showImage("4")'><img class="small" src="http://tinyurl.com/ph6ruz3" /></a> <!-- baby pic with kuya brian 3 -->
+	</div>
+
+	<!-- myself pics -->
+	<div id="myselfCat" class="no-display">
+		<h3>Myself pics</h3>
+		<a class="myself" href="#" onclick='showImage("5")'><img class="small" src="http://tinyurl.com/nvlajd9" /></a> <!-- ponytail kevin -->
+		<a class="myself" href="#" onclick='showImage("6")'><img class="small" src="http://tinyurl.com/nwlypf9" /></a> <!-- batman kevin -->
+		<a class="myself" href="#" onclick='showImage("7")'><img class="small" src="http://tinyurl.com/q5mkswp" /></a> <!-- bald kevin -->
+		<a class="myself" href="#" onclick='showImage("8")'><img class="small" src="http://tinyurl.com/qewybfr" /></a> <!-- badboy kevin -->
+		<a class="myself" href="#" onclick='showImage("9")'><img class="small" src="http://tinyurl.com/nmekfo8" /></a> <!-- prom king -->
+		<a class="myself" href="#" onclick='showImage("10")'><img class="small" src="http://tinyurl.com/pb93kyp" /></a> <!-- formal swag kevin -->
+	</div>
+
+	<legend>
+	<fieldset>
+		<ul>Folder navigation
+			<li><a href="#" onclick='categoryUncategorized("uncategorized")'><img src="http://iconizer.net/files/Futurosoft/orig/folder_gray_open.png" width="16" height="16" />Uncategorized pics</a></li>
+			<li><a href="#" onclick='categoryBaby("baby")'><img src="http://iconizer.net/files/Futurosoft/orig/folder_gray_open.png" width="16" height="16" />Baby pics</a></li>
+			<li><a href="#" onclick='categoryMyself("myself")'><img src="http://iconizer.net/files/Futurosoft/orig/folder_gray_open.png" width="16" height="16" />Myself pics</a></li>
+		</ul>
+	</fieldset>
+	</legend>
+
+</body>
+</html>
